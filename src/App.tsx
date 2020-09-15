@@ -1,7 +1,11 @@
 import React, { ReactElement } from 'react';
 
 const App = (): ReactElement => {
-    return <h1>Typescript React App</h1>;
+    return (
+        <div data-testid="App">
+            <h1>Typescript React App</h1>
+        </div>
+    );
 };
 
 export default App;

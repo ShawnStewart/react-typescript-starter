@@ -1,6 +1,6 @@
 const { resolve } = require('path');
 
-const { CheckerPlugin } = require('awesome-typescript-loader');
+const { CheckerPlugin, TsConfigPathsPlugin } = require('awesome-typescript-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
@@ -13,7 +13,7 @@ const webpackConfig = {
         filename: 'bundle.js',
     },
     devtool: isProd ? 'source-map' : 'eval-cheap-module-source-map',
-    resolve: { extensions: ['.js', '.ts', '.tsx'] },
+    resolve: { extensions: ['.js', '.ts', '.tsx'], plugins: [new TsConfigPathsPlugin()] },
     module: {
         rules: [
             {
@@ -22,10 +22,7 @@ const webpackConfig = {
             },
         ],
     },
-    plugins: [
-        new HtmlWebpackPlugin({ template: './src/index.html' }),
-        new CheckerPlugin(),
-    ],
+    plugins: [new HtmlWebpackPlugin({ template: './src/index.html' }), new CheckerPlugin()],
 };
 
 if (isProd) {
