@@ -1,9 +1,11 @@
 import React, { ReactElement } from 'react';
 
+import './app.scss';
+
 const App = (): ReactElement => {
     return (
-        <div data-testid="App">
-            <h1>Typescript React App</h1>
+        <div id="App-template" data-testid="App-template">
+            <p>Typescript React App Template</p>
         </div>
     );
 };

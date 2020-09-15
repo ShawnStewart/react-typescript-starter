@@ -11,6 +11,6 @@ describe('<App />', () => {
     test('renders correctly', () => {
         const { getByTestId } = render(<App />);
 
-        expect(getByTestId('App')).toHaveTextContent('Typescript React App');
+        expect(getByTestId('App-template')).toHaveTextContent('Typescript React App');
     });
 });

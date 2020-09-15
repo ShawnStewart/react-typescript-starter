@@ -20,6 +20,10 @@ const webpackConfig = {
                 test: /\.tsx?$/,
                 loader: 'awesome-typescript-loader',
             },
+            {
+                test: /\.s[ac]ss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+            },
         ],
     },
     plugins: [new HtmlWebpackPlugin({ template: './src/index.html' }), new CheckerPlugin()],
