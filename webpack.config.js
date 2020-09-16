@@ -26,7 +26,10 @@ const webpackConfig = {
             },
         ],
     },
-    plugins: [new HtmlWebpackPlugin({ template: './src/index.html' }), new CheckerPlugin()],
+    plugins: [
+        new HtmlWebpackPlugin({ favicon: './public/favicon.ico', minify: isProd, template: './public/index.html' }),
+        new CheckerPlugin(),
+    ],
 };
 
 if (isProd) {
