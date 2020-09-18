@@ -1,5 +1,7 @@
 # React Typescript Template
 
+![React Typescript](https://miro.medium.com/max/1024/1*Ukhx76VQ8E6JXEW7xfIzSA.png)
+
 A [React App](https://reactjs.org/) template written in [Typescript](https://www.typescriptlang.org/) with [Jest](https://jestjs.io/), [ESLint](https://eslint.org/), and [VSCode](https://code.visualstudio.com/) configurations.
 
 ## Getting Started
