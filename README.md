@@ -1,4 +1,4 @@
-# React Typescript Template
+# [React Typescript Template](https://github.com/ShawnStewart/react-typescript-template/)
 
 ![React Typescript](https://miro.medium.com/max/1024/1*Ukhx76VQ8E6JXEW7xfIzSA.png)
 
