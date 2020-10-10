@@ -6,7 +6,7 @@ A [React App](https://reactjs.org/) template written in [Typescript](https://www
 
 ## Getting Started
 
-### Click "Use this template"
+### Click "Use this template" to initialize a new repository
 
 ![Use this template image](https://docs.github.com/assets/images/help/repository/use-this-template-button.png)
 
@@ -17,6 +17,14 @@ A [React App](https://reactjs.org/) template written in [Typescript](https://www
 ```bash
 yarn
 ```
+
+### Start deving!
+
+```bash
+yarn start
+```
+
+See [full command list](https://github.com/ShawnStewart/react-typescript-template#commands).
 
 ## Commands
 
@@ -56,3 +64,7 @@ yarn test:watch
 # output coverage report
 yarn test:cov
 ```
+
+## License
+
+[Copyright (c) 2020 Shawn Stewart](https://github.com/ShawnStewart/react-typescript-template/blob/master/LICENSE)
