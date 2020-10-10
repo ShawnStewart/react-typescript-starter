@@ -71,7 +71,7 @@ module.exports = {
 
     // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
     moduleNameMapper: {
-        '\\.(css|scss)$': '<rootDir>/src/__mocks__/styleMock.js',
+        '\\.(css|scss)$': '<rootDir>/tests/__mocks__/styleMock.js',
     },
 
     // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -108,7 +108,7 @@ module.exports = {
     // rootDir: undefined,
 
     // A list of paths to directories that Jest should use to search for files in
-    roots: ['<rootDir>/src'],
+    roots: ['<rootDir>/src', '<rootDir>/tests'],
 
     // Allows you to use a custom runner instead of Jest's default test runner
     // runner: "jest-runner",
